@@ -9,7 +9,7 @@ subject.subscribe(func);
 document.querySelector("button").addEventListener("click", (e) => {
   let p = document.querySelector("p");
   let y = p.offsetTop;
-  // document.documentElement.scrollBy({ left: 0, top: y, behavior: "smooth" });
+  document.documentElement.scrollBy({ left: 0, top: y, behavior: "smooth" });
   // p.scrollBy({ left: 0, top: y, behavior: "smooth" });
   subject.next(p);
 });
