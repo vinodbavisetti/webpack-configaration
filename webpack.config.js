@@ -8,7 +8,7 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/,
-        loader: "ts-loader",
+        use: "ts-loader",
       },
       // {
       //   test: /\.scss/,
@@ -16,7 +16,7 @@ module.exports = {
       // },
       {
         test: /\.scss/,
-        loader: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
   },
